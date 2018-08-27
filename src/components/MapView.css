@@ -1,0 +1,12 @@
+.MapView {
+    position: absolute;
+    left: 450px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: left 0.5s;
+}
+
+.App-sidebarClosed .MapView {
+    left: 0;
+}

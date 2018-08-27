@@ -1,0 +1,55 @@
+.App {
+    position: relative;
+    height: 100vh;
+}
+
+.App .ListView {
+    position: absolute;
+    width: 450px;
+    max-width: 450px;
+    height: 100vh;
+    overflow-y: auto;
+    transition: transform 0.5s;
+}
+
+.App.App-sidebarClosed .ListView {
+    transform: translateX(-450px);
+}
+
+.App .App-sidebarOpenButton {
+    position: absolute;
+    top: 4em;
+    left: 450px;
+    height: 4em;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 2px 1px rgba(128, 128, 128, 0.5);
+    cursor: pointer;
+    color: #666666;
+    transition: left 0.5s;
+}
+.App .App-sidebarOpenButton::before {
+    content: "◀";
+}
+.App .App-sidebarOpenButton.App-sidebarOpenButton--reverse::before {
+    content: "▶";
+}
+.App.App-sidebarClosed .App-sidebarOpenButton {
+    left: 0;
+}
+
+@media (max-width: 450px) {
+    .App .ListView {
+        width: 95vw;
+        max-width: 95vw;
+    }
+    .App.App-sidebarClosed .ListView {
+        transform: translateX(-95vw);
+    }
+    .App .App-sidebarOpenButton {
+        left: 95vw;
+    }
+    .App .MapView {
+        left: 95vw;
+    }
+}

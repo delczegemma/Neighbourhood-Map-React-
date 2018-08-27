@@ -1,0 +1,47 @@
+
+.FoursquareDetails {
+    margin-top: 20px;
+    height: 300px;
+    max-height: 300px;
+    margin-right: -28px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 7px;
+}
+
+.gm-style-iw {
+	overflow: visible !important;
+}
+
+.gm-style-iw > div {
+	overflow: visible !important;
+}
+
+.gm-style-iw > div > div {
+	overflow: visible !important;
+}
+
+.FoursquareDetails .FoursquareDetails-title {
+    font-size: 1.4em;
+    color: #4285f4;
+    font-weight: bold;
+}
+
+.FoursquareDetails .FoursquareDetails-rating {
+    color: darkgray;
+}
+
+.FoursquareDetails .FoursquareDetails-address p {
+    margin: auto 0;
+}
+
+.FoursquareDetails .FoursquareDetails-hours {
+    background-color: #eeeeee;
+    padding: 0.5em;
+}
+.FoursquareDetails .FoursquareDetails-hours p {
+    margin: auto 0;
+}
+.FoursquareDetails .FoursquareDetails-hours-day {
+    font-weight: bold;
+}
