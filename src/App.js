@@ -15,6 +15,10 @@ class State {
     sidebarClosed = false;
 }
 
+window.gm_authFailure = function () {
+      alert("Sorry. Couldn't reach the Google Map API")
+    }
+
 class App extends React.Component {
     state = new State();
 
