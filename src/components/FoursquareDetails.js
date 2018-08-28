@@ -11,7 +11,7 @@ export default ({ model, model: { venue } }) =>
         </div>
     ) : (
         <article className="FoursquareDetails">
-            <p className="FoursquareDetails-title">{venue.name}</p>
+            <p aria-level="heading" className="FoursquareDetails-title">{venue.name}</p>
             <p className="FoursquareDetails-rating">rating: {venue.rating}</p>
             <div className="FoursquareDetails-address">
                 {venue.location.formattedAddress.map((line, i) => (

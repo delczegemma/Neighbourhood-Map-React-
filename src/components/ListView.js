@@ -30,8 +30,8 @@ export default class ListView extends React.Component {
                 </div>
                 {/* Results */}
                 <ul>
-                    {this.props.list.map(model => (
-                        <li key={model.foursquareId}>
+                    {this.props.list.map((model,index) => (
+                        <li key={model.foursquareId} role="button" tabIndex={index}>
                             <ListItem
                                 model={model}
                                 onClick={this.props.select}
